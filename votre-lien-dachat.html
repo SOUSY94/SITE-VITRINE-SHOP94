@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOP94 - Vitrine de Précommande</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+            font-size: 2em;
+        }
+        .search-bar {
+            margin: 20px 0;
+        }
+        .search-bar input[type="text"] {
+            padding: 10px;
+            width: 300px;
+            font-size: 1em;
+        }
+        .search-bar button {
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .product-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            width: 200px;
+            text-align: center;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .product-card h3 {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .product-card p {
+            color: #666;
+        }
+        .product-card a {
+            text-decoration: none;
+        }
+        .product-card button {
+            padding: 10px;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .product-card button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <header>SHOP94</header>
+
+    <div class="search-bar">
+        <input type="text" placeholder="Rechercher un article...">
+        <button>Rechercher</button>
+    </div>
+
+    <section class="products">
+        <!-- Produit 1 -->
+        <div class="product-card">
+            <img src="https://mitatejapon.jp/image/cache/010-166/PhotoRoom_007_20231002_140050-700x700.JPG" alt="Produit 1">
+            <h3>Article 1</h3>
+            <p>Description de l'article 1</p>
+            <a href="C:\Users\HP\HTML\PROJET SHOP94\Untitled-precommande 1.html" target="_blank">
+                <button>Précommander</button>
+            </a>
+        </div>
+
+        <!-- Produit 2 -->
+        <div class="product-card">
+            <img src="data:image/jpeg;base64,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" alt="Produit 2">
+            <h3>Article 2</h3>
+            <p>Description de l'article 2</p>
+            <a href="C:\Users\HP\HTML\PROJET SHOP94\Untitled-precommande2.html" target="_blank">
+                <button>Précommander</button>
+            </a>
+        </div>
+
+        <!-- Produit 3 -->
+        <div class="product-card">
+            <img src="https://img4.dhresource.com/webp/m/0x0/f3/albu/km/y/02/a5dbb290-cbf2-41f5-923f-09ea8bf75c82.jpg" alt="Produit 3">
+            <h3>Article 3</h3>
+            <p>Description de l'article 3</p>
+            <a href="https://exemple.com/produit3" target="_blank">
+                <button>Précommander</button>
+            </a>
+        </div>
+
+        <!-- Produit 4 -->
+        <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8aGKkUGZFS9jHGbGj9khNU6mRiHg_2vTzSA&s" alt="Produit 4">
+            <h3>Article 4</h3>
+            <p>Description de l'article 4</p>
+            <a href="https://exemple.com/produit4" target="_blank">
+                <button>Précommander</button>
+            </a>
+           
+                </a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
